@@ -13,3 +13,12 @@
 <li>Operadores relacionais e comparativos</li>
 <li>Operadores lógicos e aritméticos</li>
 </ul>
+
+<p>09/04/2020</p>
+<ul>
+<li>Objeto</li>
+<li>Array</li>
+<li>Funções e métodos</li>
+<li>Estrutura de repetição</li>
+<li>Escopos</li>
+</ul>
