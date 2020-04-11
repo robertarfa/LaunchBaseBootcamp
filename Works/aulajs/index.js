@@ -50,25 +50,25 @@ function sendMessage(average, turma) {
 
 
 
-//Marcar student como Flunked
+//Marcar student como failed
 //E enviar como mensagem
 
-function checkFlunked(student) { //Função para marcar student como Flunked
-    student.Flunked = false //Declaro como falso
+function checkFailed(student) { //Função para marcar student como failed
+    student.failed = false //Declaro como falso
     if (student.grade < 5) {
-        student.Flunked = true // Guarda student como flunked ou não
+        student.failed = true // Guarda student como failed ou não
     }
 }
 
 function sendMessageFlunked(student) {
-    if (student.Flunked == true) { //Se o student for guardado como flunked na função inteiro...
-        console.log(`The student ${student.name} is flunked`)
+    if (student.failed == true) { //Se o student for guardado como failed na função inteiro...
+        console.log(`The student ${student.name} failed`)
     }
 }
 
 function studentFlunked(students) { //junta as duas funções anteriores em uma só
-    for (let student of students) { //procura por studentes flunked (function checkFlunked) dentro de classA e classB
-        checkFlunked(student) //executa as funções anteriores
+    for (let student of students) { //procura por studentes failed (function checkFailed) dentro de classA e classB
+        checkFailed(student) //executa as funções anteriores
         sendMessageFlunked(student) //executa as funções anteriores
     }
 }
