@@ -22,3 +22,9 @@
 <li>Estrutura de repetição</li>
 <li>Escopos</li>
 </ul>
+
+<p>11/04/2020</p>
+<ul>
+<li>Boleanos</li>
+<li>Organização, padronização e escrita</li>
+</ul>
