@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+}
+body{
+    background: rgb(236, 205, 236);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header{
+    text-align: center;
+    padding: 30px;
+}
+header p{
+    margin: 20px;
+    font-weight: bold;
+}
+
+header a{
+    margin: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+}
+
+header a:hover{
+    color:purple;
+    transition: 400ms;
+}
