@@ -28,3 +28,16 @@
 <li>Boleanos</li>
 <li>Organização, padronização e escrita</li>
 </ul>
+
+<h2>Iniciando no Front-end</h2>
+
+<p>12/04/2020</p>
+<ul>
+<li>Primeiro projeto com HTML e CSS</li>
+<li>Menu do site</li>
+<li>Página sobre</li>
+<li>Página de portfólio</li>
+<li>Modal</li>
+<li>Controlando modal com JavaScript</li>
+<li>Vídeo dinâmico</li>
+</ul>
