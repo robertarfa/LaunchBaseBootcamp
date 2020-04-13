@@ -43,9 +43,10 @@ header{
     transition: 400ms;
 }
 
-main{
+main.index{
     margin-top: 20px;
-    min-height: calc(100vh - 70px - 10px);
+    height: 86vh;
+    /*min-height: calc(90vh);*/
 }
 
 #container{
@@ -109,6 +110,11 @@ main{
 }
 
 /*página aulas*/
+
+main.aulas{
+    margin-top: 20px;
+    height: 77.5vh;
+}
 
 .p-class{
     text-align: center;
