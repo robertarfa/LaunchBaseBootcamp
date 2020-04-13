@@ -43,9 +43,10 @@ header{
     transition: 400ms;
 }
 
-main.index{
+main{
     margin-top: 20px;
-    height: 86vh;
+    margin-bottom: 20px;
+    padding: 10px;
     /*min-height: calc(90vh);*/
 }
 
@@ -96,8 +97,12 @@ main.index{
     background: var(--color-background);
     filter: brightness(85%);
     margin: 0 auto;
-    max-width: 100%;   
     padding: 5px;
+/* para fixar o footer no bottom*/
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 #links-footer a{
@@ -111,10 +116,6 @@ main.index{
 
 /*página aulas*/
 
-main.aulas{
-    margin-top: 20px;
-    height: 77.5vh;
-}
 
 .p-class{
     text-align: center;
@@ -136,7 +137,7 @@ main.aulas{
     border-radius: 10px;
     padding: 10px;
     margin: 10px 5px;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .card .card-image img{
@@ -195,6 +196,12 @@ main.aulas{
     position: fixed;
     top: 0;
     opacity: 1;
-    visibility: visible;
-    
+    visibility: visible;   
+}
+
+iframe{
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    top: 8%;
 }
