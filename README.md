@@ -6,18 +6,21 @@
 
 ---
 <h2> > Introdução à Programação</h2>
+<h3>Módulo 1</h3>
 
 Nessa fase vamos dar os primeiros passos na programação web. Conheceremos conceitos inicias para programar na linguagem JavaScript e vamos entender lógica de programação.
 
 **Ferramentas**: Javascript, Node.js
 
 <h2> > Iniciando o Front-end </h2>
+<h3>Módulo 1</h3>
 
 Nessa fase vamos aprender o que é Front-end e como podemos fazer uma página web onde organizaremos um portfólio. Vamos conhecer e praticar HTML, CSS e Javascript no Front-end.
 
 **Ferramentas**: HTML, CSS, Javascript, Emmet
 
 <h2> > Iniciando o Back-end</h2>
+<h3>Módulo 1</h3>
 
 Nessa fase vamos criar um servidor e levar nosso website para o Back-end. Com o uso de ferramentas necessárias, teremos uma página mais dinâmica.
 
