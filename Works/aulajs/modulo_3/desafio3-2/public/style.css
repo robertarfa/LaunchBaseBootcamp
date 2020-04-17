@@ -138,10 +138,18 @@ main{
     padding: 10px;
     margin: 10px 5px;
     cursor: pointer;    
+    display: grid;
+    align-items: center;
 }
 
 .card .card-image img{
     width: 100%;
+}
+
+.card-info{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
 }
 
 .card-title, .card-info{
