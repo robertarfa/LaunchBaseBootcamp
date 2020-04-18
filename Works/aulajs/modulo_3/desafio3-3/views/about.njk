@@ -1,0 +1,29 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Desafio LaunchBase - Sobre
+    </title>
+{% endblock %}
+
+{% block content %}
+    <div id="container">
+        <img src="{{about.avatar_url}}" alt="Imagem de {{ about.name }}">
+        <h1>{{ about.name }}</h1>
+        <h2>{{ about.role }}</h2>
+        <p>{{ about.description1 }}</p>
+        <p>{{ about.description2 }}</p>
+    </div>
+
+    <footer>
+        <div class="links" id="links-footer">
+
+            {% for link in about.link %}
+
+                <a href="{{ link.url }}" target="blank">{{ link.name }}</a>
+
+            {% endfor %}
+
+        </div>
+    </footer>
+
+{% endblock %}
