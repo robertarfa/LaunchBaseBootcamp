@@ -3,6 +3,7 @@
 :root{
     --linkActive: rgb(255, 0, 191);
     --linkHover: rgb(255, 108, 218);
+    --backgroundItems: rgb(245, 245, 26);
 }
 *{
     font-family: 'Lato', sans-serif;  
@@ -63,4 +64,107 @@ header{
 .links a:hover::after{
     width: 100%;
     transition: width 300ms ease-in-out;
+}
+
+/*CARD*/
+
+.avatar{
+    max-height: 70vh;
+}
+
+.card{
+    background: white;
+    width: 60vw;
+    height: 70vh;
+    
+    margin: 5% auto;
+
+    /* grid */
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    /*sombra*/
+    box-shadow: 0 4px 8px 0px rgba(0,0,0, 0.3);
+
+    /*animation*/
+    animation: up;
+    animation-duration: 200ms;
+    animation-timing-function: ease;
+
+}
+
+@keyframes up {
+    from{
+        opacity: 0;
+        transform: translate(10px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* DETAILS */
+
+.details{
+    padding: 10% 20%;
+    box-sizing: content-box;
+    
+}
+
+.details .item{
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
+    padding: 12px 0;
+}
+
+.details .item:last-child{
+    border: none;
+}
+
+.details h3,
+.details .item div:nth-child(1){
+    color:rgb(153, 152, 152);
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    letter-spacing: 0.12rem;
+}
+
+.details .item div:nth-child(2){
+    color:rgb(102, 102, 102);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.details h3{
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--linkActive)
+}
+
+.details .item div:nth-child(2) span{
+    padding: 8px 16px;
+    background-color: var(--backgroundItems);
+    border-radius: 16px;
+    color: #777;
+    margin-right: 4px;
+    margin-top: 8px;
+
+    /* esse display é para o span obedecer o espaçamento do margin-top*/
+    display: inline-block;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 400px) {
+
+    .avatar{
+        max-height: 500px;
+    }
+    .card{
+        min-height: 500px;
+    }
+    .details{
+        padding: 10% 10%;
+    }
+
 }
