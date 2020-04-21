@@ -2,7 +2,7 @@ const fs = require('fs')
 const data = require('./data.json')
 //create
 
-exports.postInstructors = function(req, res){
+exports.postTeachers = function(req, res){
     
     const keys = Object.keys(req.body)
     // Vai retornar um array ["avatar_url","name","birth","services"]
@@ -12,22 +12,23 @@ exports.postInstructors = function(req, res){
                 return res.send('Please, fill in all the required fields.')
         }
 
-    let { avatar_url, name, birth, gender, services} = req.body
+    let { avatar_url, name, birth, selectDegree, classType, services} = req.body
     
         // Vamos transformar o birth para o numérico igual do Date.now
     birth = Date.parse(birth)
     //inserir a data de hoje
     const created_at = Date.now()
     //criar id único
-    const id = Number(data.instructors.length + 1)
+    const id = Number(data.teachers.length + 1)
         
     // {[vazio]}
-    data.instructors.push({
+    data.teachers.push({
         id,
         avatar_url,
         name,
         birth,
-        gender,
+        selectDegree,
+        classType,
         services,
         created_at
     }) //{[preencher o array]}

@@ -38,7 +38,7 @@
             </div>
         </div>
 
-        <div class="item">
+        {# <div class="item">
             <div>Sexo</div>
             <div class="div span">
                 <span>
@@ -48,17 +48,31 @@
                     <input type="radio" name="gender" value="F">Feminino
                 </span>
             </div>
-        </div>
+        </div> #}
 
-        {# <div class="item">
+        <div class="item">
             <div>Grau de escolaridade</div>
-            <div>Pós Graduação</div>
+            <div>
+                <select name="selectDegree">
+                <option value="Null"></option>
+                <option value="EMC">Ensino Médio Completo</option>
+                <option value="ESC">Ensino Superior Completo</option>
+                <option value="Master">Mestrado</option>
+                <option value="Doctor">Doutorado</option>
+                </select>
+            </div>
         </div>
 
          <div class="item">
             <div>Tipo de aula</div>
-            <div>À distância</div>
-        </div> #}
+            <div>
+                <span>
+                    <input type="radio" name="classType" value="P">Presencial
+                </span>
+                 <span>
+                    <input type="radio" name="classType" value="D">À distância
+                </span>
+            </div>
 
         <div class="item">
             <div>Área de atuação</div>

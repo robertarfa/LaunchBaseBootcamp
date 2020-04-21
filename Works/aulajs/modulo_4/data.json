@@ -1,13 +1,14 @@
 {
-  "instructors": [
+  "teachers": [
     {
       "id": 1,
-      "avatar_url": "http://oi",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/22533625?s=460&u=2ea5d05adbc2847fbeeecd7358bbecedcc431d6a&v=4",
       "name": "Roberta Aguilar",
       "birth": 523756800000,
-      "gender": "F",
+      "selectDegree": "Master",
+      "classType": "D",
       "services": "Matemática, Ciências",
-      "created_at": 1587492619143
+      "created_at": 1587494181881
     }
   ]
 }
