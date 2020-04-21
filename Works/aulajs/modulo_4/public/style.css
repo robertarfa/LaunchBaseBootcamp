@@ -69,16 +69,16 @@ header{
 /*CARD*/
 
 .avatar{
-    max-height: 70vh;
+    max-height: 60vh;
 }
 
 .card{
     background: white;
-    width: 60vw;
-    height: 70vh;
+    width: 50vw;
+    height: 60vh;
     
-    margin: 5% auto;
-
+    margin: 5vh auto;
+    
     /* grid */
     display: grid;
     grid-template-columns: 40% 60%;
@@ -140,6 +140,7 @@ header{
     color: var(--linkActive)
 }
 
+
 .details .item div:nth-child(2) span{
     padding: 8px 16px;
     background-color: var(--backgroundItems);
@@ -147,24 +148,74 @@ header{
     color: #777;
     margin-right: 4px;
     margin-top: 8px;
+    
 
     /* esse display é para o span obedecer o espaçamento do margin-top*/
     display: inline-block;
     font-weight: 900;
     text-transform: uppercase;
+    font-size: 0.6rem;
+}
+
+/* FORM */
+input{
+    width: 100%;
+    outline: none;
+    color:rgb(102, 102, 102);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+input[type="date"]{
     font-size: 0.8rem;
 }
 
-@media (min-width: 400px) {
+/* Para ignorar as configurações feitas depois*/
+input[type="radio"]{
+    width: initial;
+    margin-right: 4px;
+    height: 8px;
+}
 
+input::placeholder{
+    font-size: 0.6rem;
+    font-weight: normal;
+}
+
+button[type="submit"]{
+    padding: 8px 16px;
+    background-color: var(--linkActive);
+    color: white;
+    border-radius: 4px;
+    margin-top: 32px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (min-width: 400px) {
     .avatar{
-        max-height: 500px;
+        max-height: 550px;
+        
     }
     .card{
-        min-height: 500px;
+        min-height: 550px;
+        /* border:5px solid yellow; */
     }
     .details{
         padding: 10% 10%;
     }
-
+    input[type="date"]{
+        font-size: 0.6rem;
+    }
 }
+/* 
+@media screen and (min-width: 600px) {
+      .card{
+        border:5px solid red;
+    }
+} */

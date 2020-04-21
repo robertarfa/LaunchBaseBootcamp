@@ -4,6 +4,12 @@ const routes = require('./routes')
 
 const server = express()
 
+// São os Middleware
+
+// Esse é para enviar as req.body para a tela
+server.use(express.urlencoded({ extended: true }))
+
+// Esse é para ler a pasta public
 server.use(express.static('public'))
 server.use(routes)
 
