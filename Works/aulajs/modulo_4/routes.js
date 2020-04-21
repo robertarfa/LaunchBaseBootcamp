@@ -3,22 +3,22 @@ const routes = express.Router()
 const teachers = require('./teachers')
 
 routes.get('/', function(req, res){
-    return res.redirect('/instructors')
+    return res.redirect('/teachers')
 })
 
-routes.get('/instructors', function(req, res){
-    return res.render('instructors/index')
+routes.get('/teachers', function(req, res){
+    return res.render('teachers/index')
 })
 
-routes.get('/instructors/create', function(req, res){
-    return res.render('instructors/create')
+routes.get('/teachers/create', function(req, res){
+    return res.render('teachers/create')
 })
 
 routes.get('/members', function(req, res){
     return res.render('members')
 })
 
-routes.post('/instructors', teachers.postTeachers)
+routes.post('/teachers', teachers.postTeachers)
 
 module.exports = routes
 
