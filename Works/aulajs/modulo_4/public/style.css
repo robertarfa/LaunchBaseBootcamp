@@ -189,6 +189,7 @@ input::placeholder{
     font-weight: normal;
 }
 
+.button,
 button[type="submit"]{
     padding: 8px 16px;
     background-color: var(--linkActive);
@@ -200,6 +201,11 @@ button[type="submit"]{
     font-size: 1.0rem;
 }
 
+.button{
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+}
 
 
 /* RESPONSIVE */
