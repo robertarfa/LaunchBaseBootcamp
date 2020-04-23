@@ -47,18 +47,28 @@
             <div>
                 <select name="selectDegree">
                 <option value=""></option>
-                <option value="EMC">Ensino Médio Completo</option>
-                <option value="ESC">Ensino Superior Completo</option>
+                <option value="EMC"
+                    {% if teacher.selectDegree == "EMC" %}
+                            selected
+                    {% endif %}
+                    >Ensino Médio Completo
+                </option>
+                <option value="ESC"
+                    {% if teacher.selectDegree == "ESC" %}
+                            selected
+                    {% endif %}
+                    >Ensino Superior Completo
+                </option>
                 <option value="Master"
                     {% if teacher.selectDegree == "Master" %}
-                            checked
+                            selected
                     {% endif %}
                     >Mestrado
                 </option>
                 
                 <option value="Doctor" 
                     {% if teacher.selectDegree == "Doctor" %}
-                            checked
+                            selected
                     {% endif %}
                     >Doutorado
                 </option>

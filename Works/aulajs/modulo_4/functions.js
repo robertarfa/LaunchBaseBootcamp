@@ -30,7 +30,12 @@ module.exports= {
         return (`${year}-${month}-${day}`)
     },
     graduation:
-    function graduation(){
-        
+    function graduation (value){
+        switch(value) {
+            case 'EMC': return "Ensino Médio Completo"
+            case 'ESC': return "Ensino Superior Completo"
+            case 'Master': return "Mestrado"
+            case 'Doctor': return "Doutorado"  
+       }
     }
 }

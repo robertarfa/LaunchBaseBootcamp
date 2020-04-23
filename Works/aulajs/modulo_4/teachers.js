@@ -18,13 +18,13 @@ exports.findTeachers = function(req, res){
     const teacher = {
         ...foundTeacher,
         age: age(foundTeacher.birth),
-        selectDegree: "",
+        selectDegree: graduation(foundTeacher.selectDegree),
         classType: "",
         //Para separar o array Matemática, Ciências
         services: foundTeacher.services.split(","),
         created_at: new Intl.DateTimeFormat('pt-BR').format(foundTeacher.created_at),
     }
-
+    
     return res.render('teachers/show', { teacher })
 }
 
@@ -63,7 +63,7 @@ exports.postTeachers = function(req, res){
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err){
             if (err) return res.send("Error writing file!")
 
-            return res.redirect('/instructors')
+            return res.redirect('/teachers')
     })
 
     //return res.send(req.body)
