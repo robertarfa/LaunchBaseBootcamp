@@ -1,6 +1,6 @@
 const fs = require('fs')
 const data = require('./data.json')
-const { age, date, graduation } = require('./functions')
+const { age, date, graduation, classType } = require('./functions')
 const Intl = require('intl') //npm i intl
 
 //buscar teacher/show
@@ -19,7 +19,7 @@ exports.findTeachers = function(req, res){
         ...foundTeacher,
         age: age(foundTeacher.birth),
         selectDegree: graduation(foundTeacher.selectDegree),
-        classType: "",
+        classType: classType(foundTeacher.classType),
         //Para separar o array Matemática, Ciências
         services: foundTeacher.services.split(","),
         created_at: new Intl.DateTimeFormat('pt-BR').format(foundTeacher.created_at),

@@ -37,5 +37,13 @@ module.exports= {
             case 'Master': return "Mestrado"
             case 'Doctor': return "Doutorado"  
        }
+    },
+    classType:
+    function classType (value){
+        if (value == 'D' ) {
+            return "À distância"
+        } else {
+            return "Presencial"
+        }
     }
 }

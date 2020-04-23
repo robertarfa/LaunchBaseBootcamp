@@ -26,7 +26,7 @@
 
          <div class="item">
             <div>Tipo de aula</div>
-            <div> {{ "Presencial" if teacher.classType == "P" else "À distância"}}</div>
+            <div>{{teacher.classType}}</div>
         </div>
 
         <div class="item">
@@ -45,7 +45,7 @@
         </div>
         
         {# <button type="Submit">Editar</button> #}
-        <a href="#" class="button">Editar</a>
+        <a href="/teachers/{{ teacher.id }}/edit" class="button">Editar</a>
 
     </section>
 </div>
