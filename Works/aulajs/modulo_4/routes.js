@@ -24,5 +24,11 @@ routes.get('/members', function(req, res){
 
 routes.post('/teachers', teachers.postTeachers)
 
+routes.put('/teachers', teachers.putTeachers)
+
+routes.delete('/teachers', teachers.deleteTeachers)
+
+// HTTP
+
 module.exports = routes
 

@@ -195,28 +195,35 @@ button[type="submit"]{
     background-color: var(--linkActive);
     color: white;
     border-radius: 4px;
-    margin-top: 32px;
+    margin-top: 8px;
     width: 100%;
     font-weight: bold;
     font-size: 1.0rem;
-}
-
-.button{
-    display: inline-block;
     box-sizing: border-box;
     text-align: center;
+    margin-top: 4px;
 }
 
+
+
+#deletar, 
+#cancelar{
+    background-color: rgb(250, 85, 85);
+    margin-top: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    
+}
 
 /* RESPONSIVE */
 
+
 @media (min-width: 400px) {
     .avatar{
-        max-height: 550px;
-        
+        max-height: 650px;
     }
     .card{
-        min-height: 550px;
+        min-height: 650px;
         /* border:5px solid yellow; */
     }
     .details{
@@ -225,10 +232,24 @@ button[type="submit"]{
     input[type="date"]{
         font-size: 0.6rem;
     }
-}
-/* 
-@media screen and (min-width: 600px) {
-      .card{
-        border:5px solid red;
+    .grid-button{
+        display: grid;
+        grid-template-columns: repeat (auto-fit, minmax(5px, 1fr));
+        
     }
-} */
+}
+
+@media (min-width: 700px) {
+    .avatar{
+        max-height: 550px;
+    }
+    .card{
+        min-height: 550px;
+        /* border:5px solid yellow; */
+    }
+    .grid-button{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5%;
+    }
+} 

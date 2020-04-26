@@ -45,7 +45,19 @@
         </div>
         
         {# <button type="Submit">Editar</button> #}
+        <div class="grid-button">
         <a href="/teachers/{{ teacher.id }}/edit" class="button">Editar</a>
+       
+         <form method="POST" action="/teachers?_method=DELETE">
+             <input 
+                type="hidden"
+                name="id"
+                value={{ teacher.id }}
+                >
+
+            <button id="deletar" type="submit">Deletar</button>
+        </form>
+        </div>
 
     </section>
 </div>
